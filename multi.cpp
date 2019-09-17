@@ -4,16 +4,16 @@ using namespace std;
 int main()
 {
     static int m1,n1,m2,n2,n,ex;
-                cout<<"Enter rows and columns for Matrix A respectively: ";
-                cin>>m1>>n1;
-                cout<<"Enter rows and columns for Matrix B respectively: ";
-                cin>>m2>>n2;
-            if (n1 != m2)
-            {
-                cout<<"Matrix multiplication not possible.\n";
-            }
-            mul mu1(m1,m2);
-            mul mu2(m1,m2),mu3(m1,m2),mu4(m1,m2),mu5(m1,m2);
+    cout<<"Enter rows and columns for Matrix A respectively: ";
+    cin>>m1>>n1;
+    cout<<"Enter rows and columns for Matrix B respectively: ";
+    cin>>m2>>n2;
+    if (n1 != m2)
+    {
+        cout<<"Matrix multiplication not possible.\n";
+    }
+    mul mu1(m1,m2);
+    mul mu2(m1,m2),mu3(m1,m2),mu4(m1,m2),mu5(m1,m2);
     do
     {
         cout<<"1.insert\n2.display\n";
